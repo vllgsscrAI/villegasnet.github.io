@@ -4,15 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VillegasNet | CARINA Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <title>VillegasNet Dashboard</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .fenix-logo {
+            width: 150px;
+            height: 150px;
+            background-image: url('fenix.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 20px;
+        }
+        .dashboard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .panel {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 300px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🌐 CARINA: VillegasNet Central Dashboard</h1>
-        <p>Panel operativo inicial en desarrollo. Conexión segura con agentes y proyectos globales en curso.</p>
-        <button onclick="activateCarina()">Activar CARINA</button>
+    <div class="fenix-logo"></div>
+    <h1>VillegasNet Dashboard</h1>
+    <div class="dashboard">
+        <div class="panel">💰 Finanzas Globales</div>
+        <div class="panel">🧠 Agentes AI Activos (CARINA)</div>
+        <div class="panel">⛏️ Minería y Blockchain</div>
+        <div class="panel">🌍 Expansión Global</div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
